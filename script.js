@@ -203,7 +203,7 @@ function evaluateExpression(){
 			case '-':
 				result = subtract(x,y);
 				break;
-			case '/':
+			case '÷':
 				if(y == 0){
 					divByZero = true;
 				}
@@ -281,10 +281,13 @@ document.addEventListener("keydown", (event) => {
 	}
 	//Operators
 	else if(event.key == '+' ||
-			event.key == '-' ||
-			event.key == '/' || 
+			event.key == '-' || 
 			event.key == '*'   ){
 				addOperatorFromKeyboard(event.key);	
+	}
+	//Division symbol
+	else if(event.key == '/'){
+		addOperatorFromKeyboard('÷');
 	}
 });
 
