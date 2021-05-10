@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Rajdhani:wght@500&display=swap');
+
+html {
+    font-family: 'Changa', sans-serif;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#calculator {
+    background: #181818;
+    width: 700px;
+    height: 800px;
+    margin: auto;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+#display {
+    background: #a2af77;
+    border: 3px solid grey;
+    border-radius: 20px;
+    text-align: right;
+    font-size: 90px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    padding-right: 20px;
+    height: 110px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.buttons {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 550px;
+    grid-gap: 10px;
+}
+
+
+
+.buttons > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    font-size: 35px;
+}
+
+.buttons > div:hover {
+    opacity: 70%;
+}
+
+.buttons > div:active {
+    opacity: 100%;
+}
+
+
+#zero {
+    grid-column: 1 / 3;
+}
+
+#clear {
+    grid-column: 1 / 3;
+}
+
+.operators {
+    background:gray;
+    
+}
+
+.numbers {
+    background: #e1e1e1;
+}
+
+.display { 
+   background: gray;
+   color: white;
+}
+ 
+#equals {
+    background: cornflowerblue;
+    color: white;
+}
